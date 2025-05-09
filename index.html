@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arduino Sensor Monitor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Arduino Sensor Monitor</h1>
+        
+        <div class="connection-status">
+            <button id="connectButton">Connect to Arduino</button>
+            <span id="connectionStatus">Not Connected</span>
+        </div>
+
+        <div class="sensor-grid">
+            <div class="sensor-card">
+                <h2>Heart Rate</h2>
+                <div class="value" id="bpmValue">--</div>
+                <div class="unit">BPM</div>
+            </div>
+
+            <div class="sensor-card">
+                <h2>Oxygen Level</h2>
+                <div class="value" id="spo2Value">--</div>
+                <div class="unit">SpO2 %</div>
+            </div>
+
+            <div class="sensor-card">
+                <h2>Glucose</h2>
+                <div class="value" id="glucoseValue">--</div>
+                <div class="unit">mg/dL</div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html> 
